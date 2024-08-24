@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -33,12 +38,16 @@ header ul li a{
 
 main{
     width: 80vw;
-    height: 100vh;
+    height: calc(87vh - 2px);
+    overflow: scroll;
+}
+main::-webkit-scrollbar{
+    display: none;
 }
 
 aside {
     width: 20vw;
-    height: 100vh;
+    height: calc(87vh - 2px);
     border-left: 1px solid rgb(174, 173, 173);
 }
 
