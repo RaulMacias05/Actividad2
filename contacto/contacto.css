@@ -1,0 +1,17 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1a2741;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 3.5vh;
+    font-weight: 600;
+}
