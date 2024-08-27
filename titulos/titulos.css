@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #1a2741;
+    text-align: center;
+}
+
+
+caption {
+    margin: 5vh 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #1a2741;
+}
+
+th{
+    background-color: #1a2741;
+    color: white;
+}
+
+.competicion{
+    font-weight: 600;
+    background-color: #36538b;
+    color: white;
+}
+
+th, td {
+    padding: 1.5vh 5vw;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+tr:nth-of-type(even) {
+    background-color: #ecf1ff;
+    &:hover{
+        background-color: #e2eaff;
+    }
+}
