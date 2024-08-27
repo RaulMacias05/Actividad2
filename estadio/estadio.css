@@ -7,10 +7,13 @@
     text-align: center;
 }
 
+figure video{
+    width: 100%;
+    border-radius: 2vh;
+}
 figure img{
     width: 100%;
     border-radius: 2vh;
-    box-shadow: 0 0 3vh #254076;
     margin-bottom: 1.5vh;
 }
 
@@ -35,7 +38,6 @@ iframe {
     width: 75%;
     height: 50vh;
     border-radius: 2vh;
-    box-shadow: 0 0 3vh #254076;
 }
 
 dl {
