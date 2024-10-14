@@ -39,8 +39,16 @@ input{
 }
 
 input[type="color"] {
-    width: 10vh;
+    width: 5vh;
+    height: 5vh;
     background-color: white;
+    border: none;
+}
+
+#divcolor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label{
