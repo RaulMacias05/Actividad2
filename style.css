@@ -71,3 +71,15 @@ footer small{
 footer small abbr{
     text-decoration: none;
 }
+
+@media (max-width: 700px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+    }
+}

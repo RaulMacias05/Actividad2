@@ -10,11 +10,16 @@
 figure video{
     width: 100%;
     border-radius: 2vh;
+    margin-bottom: 1.5vh;
 }
 figure img{
     width: 100%;
     border-radius: 2vh;
     margin-bottom: 1.5vh;
+}
+
+figcaption{
+    margin-bottom: 1vh;
 }
 
 h1 {

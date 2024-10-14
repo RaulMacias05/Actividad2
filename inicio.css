@@ -25,13 +25,14 @@ blockquote{
     color: #254076;
 }
 form {
+    width: 80%;
     padding: 7vh;
     border-radius: 2vh;
     box-shadow: 0 0 1vh rgb(0, 0, 0, .4);
 }
 
 input{
-    width: 60vh;
+    width: 100%;
     height: 4vh;
     border-radius: 1vh;
     border: 1px solid grey;
@@ -45,4 +46,8 @@ input[type="color"] {
 label{
     color: #254076;
     font-weight: 600;
+}
+
+audio {
+    margin-bottom: 5vh;
 }
