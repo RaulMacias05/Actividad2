@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="titulos.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="{% static 'css/titulos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta name="autor" content="Raúl Ariel Sánchez Macías">
     <meta name="description" content="Información resumida sobre los títulos del Club de Fútbol Monterrey">
     <title>Rayados - Títulos</title>
@@ -13,11 +14,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../jugadores/jugadores.html">Jugadores</a></li>
-                <li><a href="../estadio/estadio.html">Estadio</a></li>
-                <li><a href="../titulos/titulos.html">Títulos</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <li><a href="{% url 'index.html' %}">Inicio</a></li>
+                <li><a href="{% url 'jugadores.html' %}">Jugadores</a></li>
+                <li><a href="{% url 'estadio.html' %}">Estadio</a></li>
+                <li><a href="{% url 'titulos.html' %}">Títulos</a></li>
+                <li><a href="{% url 'contacto.html' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>

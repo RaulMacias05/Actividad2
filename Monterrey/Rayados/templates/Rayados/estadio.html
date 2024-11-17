@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estadio.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="{% static 'css/estadio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -16,11 +17,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../jugadores/jugadores.html">Jugadores</a></li>
-                <li><a href="../estadio/estadio.html">Estadio</a></li>
-                <li><a href="../titulos/titulos.html">Títulos</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <li><a href="{% url 'index.html' %}">Inicio</a></li>
+                <li><a href="{% url 'jugadores.html' %}">Jugadores</a></li>
+                <li><a href="{% url 'estadio.html' %}">Estadio</a></li>
+                <li><a href="{% url 'titulos.html' %}">Títulos</a></li>
+                <li><a href="{% url 'contacto.html' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +31,7 @@
             <div class="div_main">
                 <h1>El Estadio <abbr title="Banco Bilbao Vizcaya Argentaria">BBVA</abbr></h1>
                 <figure>
-                    <video controls src="../multimedia/interior.mp4"></video>
+                    <video controls src="{% static 'complements/interior.mp4' %}"></video>
                     <figcaption><b><i>Vista desde el interior del estadio</i></b></figcaption>
                 </figure>
                 <figure>
@@ -71,7 +72,7 @@
             <div class="comprar_boletos">
                 <strong>¡COMPRA TUS BOLETOS!</strong>
                 <a href="https://rayados.com/es/noticias/16116/boletos-digitales" target="_blank">
-                    <img src="../multimedia/img/ticket.png" alt="Ticket con link">
+                    <img src="{% static 'img/ticket.png' %}" alt="Ticket con link">
                 </a>
             </div>
         </aside>

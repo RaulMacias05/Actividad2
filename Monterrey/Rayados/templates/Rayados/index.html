@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicio.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta name="autor" content="Raúl Ariel Sánchez Macías">
     <meta name="description" content="Información resumida del Club de Fútbol Monterrey (Rayados del Monterrey)">
     <title>Rayados</title>
@@ -13,18 +14,18 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="jugadores/jugadores.html">Jugadores</a></li>
-                <li><a href="estadio/estadio.html">Estadio</a></li>
-                <li><a href="titulos/titulos.html">Títulos</a></li>
-                <li><a href="contacto/contacto.html">Contacto</a></li>
+                <li><a href="{% url 'index.html' %}">Inicio</a></li>
+                <li><a href="{% url 'jugadores.html' %}">Jugadores</a></li>
+                <li><a href="{% url 'estadio.html' %}">Estadio</a></li>
+                <li><a href="{% url 'titulos.html' %}">Títulos</a></li>
+                <li><a href="{% url 'contacto.html' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="menu-aside-container">
         <main>
-            <img src="multimedia/img/escudo.png" alt="Escudo de Rayados">
+            <img src="{% static 'img/escudo.png' %}" alt="Escudo de Rayados">
             <blockquote cite="https://rayados.com/es/monterrey/valores-rayados">
                 <em>"Nos esforzamos por alcanzar la excelencia en nuestro quehacer deportivo e institucional. Ser símbolo de pasión, entrega, competitividad y actitud ganadora es lo que impulsa al Club."</em>
             </blockquote>
@@ -49,7 +50,7 @@
                     </div>
                 </form>
                 <h2>Escuchar Himno</h2>
-                <audio controls src="multimedia/himno.mp3"></audio>
+                <audio controls src="{% static 'complements/himno.mp3' %}"></audio>
             </section>
         </main>
     
@@ -64,6 +65,6 @@
         </address>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
